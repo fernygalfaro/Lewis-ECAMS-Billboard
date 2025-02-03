@@ -1,0 +1,82 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #title-box {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #881f1f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  #title-box:hover {
+    transform: scale(1.1);
+  }
+  #title-box:hover .dropdown-content {
+    max-height: 300px;
+    opacity: 1;
+  }
+  .dropdown-content {
+    font-size: 15px;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    background-color: rgb(120, 75, 75);
+    border-radius: 0 0 5px 5px;
+    top: 40px;
+    right: 0;
+    width: 150px;
+    transition: max-height 0.4s ease-out, opacity 0.4s ease-out, width 0.4s ease-out;
+    opacity: 0;
+    z-index: 1000;
+  }
+  .dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .dropdown-content a:hover {
+    background-color: #6d3e3e;
+  }
+  #map { 
+    height: calc(100% - 20px); 
+    width: 100vw; 
+    background: linear-gradient(to right, rgb(237,236,232), rgb(235,234,229)); /* Slight gradient background color */
+  }
+  #coordinates-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: right;
+  }
+  .custom-marker {
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .custom-marker:hover {
+    background-color: #ffffff;
+    transform: scale(1.2);
+  }
+  /* Hide Leaflet watermark */
+  .leaflet-control-attribution.leaflet-control {
+    display: none;
+  }
+  
