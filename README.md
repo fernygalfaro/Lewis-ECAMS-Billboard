@@ -1,6 +1,6 @@
-# ECaMS Billboard Static Site
+# ECAMS Billboard Static Site
 This repository is used to host the static website content for the ECaMS Billboard project.
-
+![Image](https://github.com/user-attachments/assets/94362520-fdd1-411b-a8e2-026250eafbd2)
 
 ## Dependencies
 - Node.js
